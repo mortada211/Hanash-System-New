@@ -1,0 +1,95 @@
+﻿<Window x:Class="HanashGamingCafe.SalesHistoryWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="سجل المبيعات والفواتير" Height="650" Width="950"
+        WindowStartupLocation="CenterScreen" FlowDirection="RightToLeft" Foreground="#FF774C4C" Background="#FF1E1E2E">
+
+    <Grid Margin="15">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- الهيدر والعنوان -->
+        <Border Grid.Row="0" Background="#1E1E2E" CornerRadius="8" Padding="15" Margin="0,0,0,15">
+            <TextBlock Text="📋 سجل المبيعات والفواتير المكتملة" Foreground="White" FontSize="20" FontWeight="Bold"/>
+        </Border>
+
+        <!-- شريط الفلترة والتاريخ وتحديد الكاشير -->
+        <Border Grid.Row="1" Background="#2A2A3C" CornerRadius="8" Padding="10" Margin="0,0,0,15">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="من تاريخ:" Foreground="White" VerticalAlignment="Center" Margin="0,0,8,0"/>
+                <DatePicker x:Name="DpStartDate" Width="130" Margin="0,0,15,0"/>
+
+                <TextBlock Text="إلى تاريخ:" Foreground="White" VerticalAlignment="Center" Margin="0,0,8,0"/>
+                <DatePicker x:Name="DpEndDate" Width="130" Margin="0,0,15,0"/>
+
+                <!-- 🟢 قائمة اختيار الكاشير المُضافة -->
+                <TextBlock Text="الكاشير:" Foreground="White" VerticalAlignment="Center" Margin="0,0,8,0"/>
+                <ComboBox x:Name="CmbCashiers" Width="140" Height="30" Margin="0,0,15,0" 
+                          VerticalContentAlignment="Center" Background="#1E1E2E" Foreground="Black" FontWeight="SemiBold"/>
+
+                <Button x:Name="BtnFilter" Content="🔍 عرض المبيعات" Width="130" Height="32" 
+                        Background="#4CAF50" Foreground="White" FontWeight="Bold" 
+                        BorderThickness="0" Cursor="Hand" Click="BtnFilter_Click"/>
+            </StackPanel>
+        </Border>
+
+        <!-- جدول الفواتير -->
+        <DataGrid Grid.Row="2" x:Name="DgSales" AutoGenerateColumns="False" IsReadOnly="True" 
+                  Background="#1E1E2E" RowBackground="#2A2A3C" AlternatingRowBackground="#222232" 
+                  Foreground="White" GridLinesVisibility="Horizontal" HorizontalGridLinesBrush="#3F3F56"
+                  HeadersVisibility="Column" FontSize="14" RowHeight="35">
+            <DataGrid.Resources>
+                <Style TargetType="DataGridColumnHeader">
+                    <Setter Property="Background" Value="#151521"/>
+                    <Setter Property="Foreground" Value="#4CAF50"/>
+                    <Setter Property="FontWeight" Value="Bold"/>
+                    <Setter Property="Padding" Value="10,5,10,5"/>
+                    <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                </Style>
+            </DataGrid.Resources>
+
+            <DataGrid.Columns>
+                <!-- عمود اسم الكاشير -->
+                <DataGridTextColumn Header="اسم الكاشير" Binding="{Binding CashierName}" Width="160"/>
+
+                <DataGridTextColumn Header="المكان / الجهاز" Binding="{Binding DeviceName}" Width="*"/>
+                <DataGridTextColumn Header="وقت الإنهاء" Binding="{Binding EndTime, StringFormat=\{0:yyyy-MM-dd HH:mm\}}" Width="160"/>
+                <DataGridTextColumn Header="طريقة الدفع" Binding="{Binding PaymentMethod}" Width="120"/>
+                <DataGridTextColumn Header="المبلغ الكلي" Binding="{Binding TotalAmount, StringFormat=\{0:N0\} د.ع}" Width="140"/>
+
+                <DataGridTemplateColumn Header="التفاصيل" Width="100">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Content="👁️ عرض" Click="BtnViewDetails_Click" Tag="{Binding}" 
+                                    Background="#2196F3" Foreground="White" BorderThickness="0" 
+                                    Padding="5,2" Cursor="Hand"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <!-- الشريط السفلي للمجموع والإغلاق -->
+        <Border Grid.Row="3" Background="#1E1E2E" CornerRadius="8" Padding="15" Margin="0,15,0,0">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+                <StackPanel Grid.Column="0" Orientation="Horizontal">
+                    <TextBlock Text="إجمالي مبيعات الفترة: " Foreground="White" FontSize="18" FontWeight="Bold"/>
+                    <TextBlock x:Name="TxtTotalSales" Text="0 د.ع" Foreground="#FFD700" FontSize="20" FontWeight="Bold"/>
+                </StackPanel>
+
+                <Button Grid.Column="1" Content="إغلاق" Width="100" Height="35" 
+                        Background="#E53935" Foreground="White" FontWeight="Bold" 
+                        BorderThickness="0" Cursor="Hand" Click="BtnClose_Click"/>
+            </Grid>
+        </Border>
+    </Grid>
+</Window>

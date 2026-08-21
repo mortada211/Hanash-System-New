@@ -1,0 +1,461 @@
+﻿<Window x:Class="HanashGamingCafe.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="نظام إدارة قاعة ألعاب حنش الشهير" Height="780" Width="1300"
+        WindowStartupLocation="CenterScreen" Background="#0F111A" FlowDirection="RightToLeft">
+
+    <Window.Resources>
+        <!-- ستايل لإخفاء النصوص عند طي القائمة الجانبية -->
+        <Style x:Key="SidebarTextStyle" TargetType="TextBlock">
+            <Setter Property="Visibility" Value="Visible"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="Margin" Value="10,0,0,0"/>
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding ElementName=BtnToggleSidebar, Path=IsChecked}" Value="True">
+                    <Setter Property="Visibility" Value="Collapsed"/>
+                </DataTrigger>
+            </Style.Triggers>
+        </Style>
+
+        <!-- Style الأزرار الرئيسية في القائمة الجانبية -->
+        <Style x:Key="SidebarButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="#1A1C29"/>
+            <Setter Property="Foreground" Value="#A0A5C0"/>
+            <Setter Property="FontSize" Value="13"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Height" Value="44"/>
+            <Setter Property="Margin" Value="0,0,0,8"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border x:Name="border" Background="{TemplateBinding Background}" CornerRadius="10" Padding="12,0">
+                            <ContentPresenter HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="border" Property="Background" Value="#25283B"/>
+                                <Setter Property="Foreground" Value="#FFFFFF"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- Style للبطاقات والحاويات -->
+        <Style x:Key="CardBorderStyle" TargetType="Border">
+            <Setter Property="Background" Value="#161824"/>
+            <Setter Property="CornerRadius" Value="14"/>
+            <Setter Property="BorderBrush" Value="#23263B"/>
+            <Setter Property="BorderThickness" Value="1"/>
+        </Style>
+    </Window.Resources>
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- 📌 القائمة الجانبية (Sidebar) مع حركة الطي -->
+        <Border Grid.Column="0" Background="#13141F" BorderBrush="#1F2233" BorderThickness="0,0,1,0">
+            <Border.Style>
+                <Style TargetType="Border">
+                    <Setter Property="Width" Value="240"/>
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding ElementName=BtnToggleSidebar, Path=IsChecked}" Value="True">
+                            <Setter Property="Width" Value="70"/>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </Border.Style>
+
+            <DockPanel Margin="10,15">
+
+                <!-- زر طي وفتح القائمة -->
+                <ToggleButton x:Name="BtnToggleSidebar" DockPanel.Dock="Top" HorizontalAlignment="Right" Background="Transparent" BorderThickness="0" Foreground="#A0A5C0" FontSize="20" Cursor="Hand" Margin="0,0,5,15" IsChecked="False">
+                    <ToggleButton.Template>
+                        <ControlTemplate TargetType="ToggleButton">
+                            <TextBlock Text="☰" Background="Transparent"/>
+                        </ControlTemplate>
+                    </ToggleButton.Template>
+                </ToggleButton>
+
+                <!-- الهيدر الشعار -->
+                <StackPanel DockPanel.Dock="Top" Margin="0,0,0,25" HorizontalAlignment="Center">
+                    <Border CornerRadius="12" Padding="10,6" Margin="0,0,0,8" Height="48">
+                        <Border.Style>
+                            <Style TargetType="Border">
+                                <Setter Property="Width" Value="175"/>
+                                <Style.Triggers>
+                                    <DataTrigger Binding="{Binding ElementName=BtnToggleSidebar, Path=IsChecked}" Value="True">
+                                        <Setter Property="Width" Value="50"/>
+                                    </DataTrigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Border.Style>
+                        <Border.Background>
+                            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                                <GradientStop Color="#FFB700" Offset="0"/>
+                                <GradientStop Color="#FF8800" Offset="1"/>
+                            </LinearGradientBrush>
+                        </Border.Background>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                            <TextBlock Text="🎮" Foreground="#0F111A" FontSize="20" FontWeight="Black" Width="30" TextAlignment="Center"/>
+                            <TextBlock Text="قاعة حنش" Style="{StaticResource SidebarTextStyle}" Foreground="#0F111A" FontSize="18" FontWeight="Black"/>
+                        </StackPanel>
+                    </Border>
+                    <TextBlock Text="نظام الكاشير الموحد" Style="{StaticResource SidebarTextStyle}" Foreground="#6C7293" FontSize="11" FontWeight="Bold" HorizontalAlignment="Center"/>
+                </StackPanel>
+
+                <!-- أزرار التنقل الرئيسية -->
+                <StackPanel DockPanel.Dock="Top">
+                    <Button x:Name="BtnNavCashier" Click="NavButton_Click" Tag="Cashier" Height="44" Foreground="White" FontSize="13" FontWeight="Bold" Margin="0,0,0,8" Cursor="Hand" BorderThickness="0" ToolTip="المحاسبة والجلسات">
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Border Background="#6C5CE7" CornerRadius="10" Padding="12,0">
+                                    <ContentPresenter HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="💳" FontSize="16" Width="25" TextAlignment="Center"/>
+                            <TextBlock Text="المحاسبة والجلسات" Style="{StaticResource SidebarTextStyle}"/>
+                        </StackPanel>
+                    </Button>
+
+                    <Button x:Name="BtnNavPlayStation" Click="NavButton_Click" Tag="PlayStation" Style="{StaticResource SidebarButtonStyle}" ToolTip="البلايستيشن (بالساعة)">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="🎮" FontSize="16" Width="25" TextAlignment="Center"/>
+                            <TextBlock Text="البلايستيشن (بالساعة)" Style="{StaticResource SidebarTextStyle}"/>
+                        </StackPanel>
+                    </Button>
+
+                    <Button x:Name="BtnNavBilliards" Click="NavButton_Click" Tag="Billiards" Style="{StaticResource SidebarButtonStyle}" ToolTip="البلياردو (الجولات)">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="🎱" FontSize="16" Width="25" TextAlignment="Center"/>
+                            <TextBlock Text="البلياردو (الجولات)" Style="{StaticResource SidebarTextStyle}"/>
+                        </StackPanel>
+                    </Button>
+
+                    <Button x:Name="BtnNavSeating" Click="NavButton_Click" Tag="Seating" Style="{StaticResource SidebarButtonStyle}" ToolTip="طاولات الجلوس (طلبات)">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="☕" FontSize="16" Width="25" TextAlignment="Center"/>
+                            <TextBlock Text="طاولات الجلوس (طلبات)" Style="{StaticResource SidebarTextStyle}"/>
+                        </StackPanel>
+                    </Button>
+
+                    <Button x:Name="BtnNavSalesHistory" Click="BtnOpenSalesHistory_Click" Height="44" Foreground="White" FontSize="13" FontWeight="Bold" Margin="0,0,0,8" Cursor="Hand" BorderThickness="0" ToolTip="سجل المبيعات">
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Border CornerRadius="10" Padding="12,0">
+                                    <Border.Background>
+                                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                                            <GradientStop Color="#00B894" Offset="0"/>
+                                            <GradientStop Color="#00CEC9" Offset="1"/>
+                                        </LinearGradientBrush>
+                                    </Border.Background>
+                                    <ContentPresenter HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="📊" FontSize="16" Width="25" TextAlignment="Center"/>
+                            <TextBlock Text="سجل المبيعات" Style="{StaticResource SidebarTextStyle}"/>
+                        </StackPanel>
+                    </Button>
+
+                    <Button x:Name="BtnNavInventory" Click="NavButton_Click" Tag="Inventory" Style="{StaticResource SidebarButtonStyle}" ToolTip="المخزن والتوريد">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="📦" FontSize="16" Width="25" TextAlignment="Center"/>
+                            <TextBlock Text="المخزن والتوريد" Style="{StaticResource SidebarTextStyle}"/>
+                        </StackPanel>
+                    </Button>
+
+                    <Button x:Name="BtnNavSettings" Click="BtnNavSettings_Click" Style="{StaticResource SidebarButtonStyle}" ToolTip="الإعدادات">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="⚙️" FontSize="16" Width="25" TextAlignment="Center"/>
+                            <TextBlock Text="الإعدادات" Style="{StaticResource SidebarTextStyle}"/>
+                        </StackPanel>
+                    </Button>
+
+                    <Button x:Name="BtnShiftsHistory" Click="BtnShiftsHistory_Click" Height="38" Background="#23263B" Foreground="#A0A5C0" FontSize="12" FontWeight="Bold" BorderThickness="0" Margin="0,4,0,0" Cursor="Hand" ToolTip="سجل الشفتات والتصفية">
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Border Background="{TemplateBinding Background}" CornerRadius="8" Padding="12,0">
+                                    <ContentPresenter HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="📑" FontSize="16" Width="25" TextAlignment="Center"/>
+                            <TextBlock Text="سجل الشفتات" Style="{StaticResource SidebarTextStyle}"/>
+                        </StackPanel>
+                    </Button>
+                </StackPanel>
+
+                <!-- 📌 أزرار إدارة الشفت والجرد -->
+                <Border Background="#181A26" CornerRadius="12" Padding="5" Margin="0,15,0,0" BorderBrush="#25283B" BorderThickness="1">
+                    <StackPanel>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,5,0,8">
+                            <TextBlock Text="⚙️" FontSize="12" Width="20" TextAlignment="Center" Foreground="#6C7293"/>
+                            <TextBlock Text="إدارة الشفت" Style="{StaticResource SidebarTextStyle}" Foreground="#6C7293" FontSize="11" FontWeight="Bold"/>
+                        </StackPanel>
+
+                        <!-- زر فتح شفت جديد -->
+                        <Button x:Name="BtnStartShift" Click="BtnStartShift_Click" Height="36" Foreground="White" FontSize="12" FontWeight="Bold" BorderThickness="0" Margin="0,0,0,6" Cursor="Hand" ToolTip="فتح شفت جديد">
+                            <Button.Template>
+                                <ControlTemplate TargetType="Button">
+                                    <Border Background="#00B894" CornerRadius="8" Padding="8,0">
+                                        <ContentPresenter HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Button.Template>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="🟢" FontSize="12" Width="20" TextAlignment="Center"/>
+                                <TextBlock Text="فتح شفت جديد" Style="{StaticResource SidebarTextStyle}"/>
+                            </StackPanel>
+                        </Button>
+
+                        <!-- زر إغلاق وجرد الشفت -->
+                        <Button x:Name="BtnCloseShift" Click="BtnCloseShift_Click" Height="36" Foreground="White" FontSize="12" FontWeight="Bold" BorderThickness="0" Cursor="Hand" ToolTip="جرد وإغلاق الشفت">
+                            <Button.Template>
+                                <ControlTemplate TargetType="Button">
+                                    <Border Background="#E17055" CornerRadius="8" Padding="8,0">
+                                        <ContentPresenter HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Button.Template>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="🔒" FontSize="12" Width="20" TextAlignment="Center"/>
+                                <TextBlock Text="جرد وإغلاق الشفت" Style="{StaticResource SidebarTextStyle}"/>
+                            </StackPanel>
+                        </Button>
+                    </StackPanel>
+                </Border>
+            </DockPanel>
+        </Border>
+
+        <!-- 🖥️ مساحة العرض الرئيسية -->
+        <Grid Grid.Column="1" Margin="18">
+
+            <!-- 1️⃣ تبويب المحاسبة الشامل -->
+            <Grid x:Name="ViewCashier" Visibility="Visible">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="380"/>
+                </Grid.ColumnDefinitions>
+
+                <Grid Grid.Column="0" Margin="0,0,15,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <DockPanel Grid.Row="0" Margin="0,0,0,15">
+                        <TextBlock Text="💳 الجلسات والطاولات النشطة" Foreground="#FFFFFF" FontSize="20" FontWeight="Bold"/>
+                        <Button Content="تحديث 🔄" Click="RefreshCashier_Click" HorizontalAlignment="Right" Padding="14,6" Foreground="White" FontWeight="Bold" BorderThickness="0" Cursor="Hand">
+                            <Button.Template>
+                                <ControlTemplate TargetType="Button">
+                                    <Border Background="#4A69BD" CornerRadius="8">
+                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Button.Template>
+                        </Button>
+                    </DockPanel>
+
+                    <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto" PanningMode="Both">
+                        <WrapPanel x:Name="PanelActiveSessions" ItemWidth="210" ItemHeight="150"/>
+                    </ScrollViewer>
+                </Grid>
+
+                <!-- بطاقة الفاتورة -->
+                <Border Grid.Column="1" Style="{StaticResource CardBorderStyle}" Padding="15">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+
+                        <TextBlock x:Name="TxtSelectedSessionTitle" Text="اختر جلسة من القائمة لعرض الفاتورة" Foreground="#FFC048" FontSize="15" FontWeight="Bold" Margin="0,0,0,12" TextWrapping="Wrap"/>
+
+                        <!-- 🟢 تحكم الكاشير في الجولات (للبلياردو فقط) -->
+                        <Border x:Name="RoundsControlBorder" Grid.Row="1" Background="#0F111A" CornerRadius="10" Padding="12" Margin="0,0,0,12" BorderBrush="#25283B" BorderThickness="1" Visibility="Collapsed">
+                            <DockPanel>
+                                <TextBlock Text="عدد الجولات / الدسات:" Foreground="#A0A5C0" FontSize="13" FontWeight="Bold" VerticalAlignment="Center"/>
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                                    <Button Content="-" Click="BtnDecrementRound_Click" Width="32" Height="32" Background="#FF5252" Foreground="White" FontSize="16" FontWeight="Bold" BorderThickness="0" Cursor="Hand">
+                                        <Button.Template>
+                                            <ControlTemplate TargetType="Button">
+                                                <Border Background="{TemplateBinding Background}" CornerRadius="6">
+                                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                                </Border>
+                                            </ControlTemplate>
+                                        </Button.Template>
+                                    </Button>
+                                    <TextBlock x:Name="TxtRoundsCount" Text="1" Foreground="#FFC048" FontSize="18" FontWeight="Bold" Margin="12,0" VerticalAlignment="Center"/>
+                                    <Button Content="+" Click="BtnIncrementRound_Click" Width="32" Height="32" Background="#05C46B" Foreground="White" FontSize="16" FontWeight="Bold" BorderThickness="0" Cursor="Hand">
+                                        <Button.Template>
+                                            <ControlTemplate TargetType="Button">
+                                                <Border Background="{TemplateBinding Background}" CornerRadius="6">
+                                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                                </Border>
+                                            </ControlTemplate>
+                                        </Button.Template>
+                                    </Button>
+                                </StackPanel>
+                            </DockPanel>
+                        </Border>
+
+                        <DataGrid x:Name="GridCurrentSessionOrders" Grid.Row="2" AutoGenerateColumns="False" IsReadOnly="True" Background="#0F111A" RowBackground="#161824" Foreground="White" GridLinesVisibility="Horizontal" HorizontalGridLinesBrush="#23263B" BorderThickness="1" BorderBrush="#23263B" MouseDoubleClick="GridCurrentSessionOrders_MouseDoubleClick"
+                                  ScrollViewer.PanningMode="VerticalOnly" ScrollViewer.CanContentScroll="True">
+                            <DataGrid.Resources>
+                                <Style TargetType="DataGridColumnHeader">
+                                    <Setter Property="Background" Value="#1F2233"/>
+                                    <Setter Property="Foreground" Value="#A0A5C0"/>
+                                    <Setter Property="Padding" Value="8,6"/>
+                                    <Setter Property="FontWeight" Value="Bold"/>
+                                </Style>
+                            </DataGrid.Resources>
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="المادة / الخدمة" Binding="{Binding Name}" Width="*"/>
+                                <DataGridTextColumn Header="العدد" Binding="{Binding Qty}" Width="55"/>
+                                <DataGridTextColumn Header="السعر" Binding="{Binding Total, StringFormat='{}{0:N0}'}" Width="85"/>
+                            </DataGrid.Columns>
+                        </DataGrid>
+
+                        <StackPanel Grid.Row="3" Margin="0,12,0,0">
+                            <Border Background="#0F111A" CornerRadius="10" Padding="12" Margin="0,0,0,10" BorderBrush="#23263B" BorderThickness="1">
+                                <DockPanel>
+                                    <TextBlock Text="المجموع الصافي:" Foreground="#A0A5C0" FontSize="14" FontWeight="Bold" VerticalAlignment="Center"/>
+                                    <TextBlock x:Name="TxtTotalAmount" Text="0 د.ع" Foreground="#00FF88" FontSize="20" FontWeight="Black" HorizontalAlignment="Right"/>
+                                </DockPanel>
+                            </Border>
+
+                            <Button Content="➕ إضافة مشروب / أرجيلة / خدمة" Click="BtnAddService_Click" Height="38" Foreground="White" FontWeight="Bold" BorderThickness="0" Margin="0,0,0,8" Cursor="Hand">
+                                <Button.Template>
+                                    <ControlTemplate TargetType="Button">
+                                        <Border Background="#0984E3" CornerRadius="8">
+                                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                        </Border>
+                                    </ControlTemplate>
+                                </Button.Template>
+                            </Button>
+
+                            <!-- زر نقل الفاتورة / تغيير الطاولة -->
+                            <Button x:Name="BtnTransferSession" 
+                                    Content="🚚 نقل الفاتورة / الطاولة" 
+                                    Click="BtnTransferSession_Click" 
+                                    Foreground="White" 
+                                    FontWeight="Bold" 
+                                    FontSize="13" 
+                                    Height="38" 
+                                    Margin="0,0,0,8" 
+                                    Cursor="Hand"
+                                    BorderThickness="0">
+                                <Button.Template>
+                                    <ControlTemplate TargetType="Button">
+                                        <Border Background="#6C5CE7" CornerRadius="8">
+                                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                        </Border>
+                                    </ControlTemplate>
+                                </Button.Template>
+                            </Button>
+
+                            <Button Content="🧾 إنهاء واستلام الفاتورة" Click="BtnFinishSession_Click" Height="42" Foreground="White" FontWeight="Bold" FontSize="14" BorderThickness="0" Cursor="Hand">
+                                <Button.Template>
+                                    <ControlTemplate TargetType="Button">
+                                        <Border CornerRadius="8">
+                                            <Border.Background>
+                                                <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                                                    <GradientStop Color="#00B894" Offset="0"/>
+                                                    <GradientStop Color="#00CEC9" Offset="1"/>
+                                                </LinearGradientBrush>
+                                            </Border.Background>
+                                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                        </Border>
+                                    </ControlTemplate>
+                                </Button.Template>
+                            </Button>
+                        </StackPanel>
+                    </Grid>
+                </Border>
+            </Grid>
+
+            <!-- 2️⃣ تبويب البلايستيشن -->
+            <Grid x:Name="ViewPlayStation" Visibility="Collapsed">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <DockPanel Grid.Row="0" Margin="0,0,0,15">
+                    <TextBlock Text="🎮 أجهزة البلايستيشن (حساب بالساعة)" Foreground="White" FontSize="18" FontWeight="Bold"/>
+                    <Button Content="➕ إضافة جهاز بلايستيشن" Click="BtnAddNewDevice_Click" Tag="بلايستيشن" HorizontalAlignment="Right" Padding="15,8" Foreground="White" FontWeight="Bold" BorderThickness="0" Cursor="Hand">
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Border Background="#00B894" CornerRadius="8">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                </DockPanel>
+                <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto" PanningMode="Both">
+                    <WrapPanel x:Name="PanelPlayStationDevices" ItemWidth="210" ItemHeight="140"/>
+                </ScrollViewer>
+            </Grid>
+
+            <!-- 3️⃣ تبويب البلياردو -->
+            <Grid x:Name="ViewBilliards" Visibility="Collapsed">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <DockPanel Grid.Row="0" Margin="0,0,0,15">
+                    <TextBlock Text="🎱 طاولات البلياردو (حساب بالجولات)" Foreground="White" FontSize="18" FontWeight="Bold"/>
+                    <Button Content="➕ إضافة طاولة بلياردو" Click="BtnAddNewDevice_Click" Tag="بلياردو" HorizontalAlignment="Right" Padding="15,8" Foreground="White" FontWeight="Bold" BorderThickness="0" Cursor="Hand">
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Border Background="#00B894" CornerRadius="8">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                </DockPanel>
+                <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto" PanningMode="Both">
+                    <WrapPanel x:Name="PanelBilliardsDevices" ItemWidth="210" ItemHeight="140"/>
+                </ScrollViewer>
+            </Grid>
+
+            <!-- 4️⃣ تبويب طاولات الجلوس -->
+            <Grid x:Name="ViewSeating" Visibility="Collapsed">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <DockPanel Grid.Row="0" Margin="0,0,0,15">
+                    <TextBlock Text="☕ طاولات الجلوس (طلبات ومشروبات فقط)" Foreground="White" FontSize="18" FontWeight="Bold"/>
+                    <Button Content="➕ إضافة طاولة جلوس" Click="BtnAddNewDevice_Click" Tag="طاولة" HorizontalAlignment="Right" Padding="15,8" Foreground="White" FontWeight="Bold" BorderThickness="0" Cursor="Hand">
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Border Background="#00B894" CornerRadius="8">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                </DockPanel>
+                <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto" PanningMode="Both">
+                    <WrapPanel x:Name="PanelSeatingDevices" ItemWidth="210" ItemHeight="140"/>
+                </ScrollViewer>
+            </Grid>
+
+        </Grid>
+    </Grid>
+</Window>

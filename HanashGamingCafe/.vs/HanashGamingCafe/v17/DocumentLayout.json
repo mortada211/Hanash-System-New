@@ -1,0 +1,566 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ANAS\\Desktop\\HanashGamingCafe\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{810D23F3-85E0-43AC-8DFC-E46909B66278}|HanashGamingCafe\\HanashGamingCafe.csproj|c:\\users\\anas\\desktop\\hanashgamingcafe\\hanashgamingcafe\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{810D23F3-85E0-43AC-8DFC-E46909B66278}|HanashGamingCafe\\HanashGamingCafe.csproj|solutionrelative:hanashgamingcafe\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{810D23F3-85E0-43AC-8DFC-E46909B66278}|HanashGamingCafe\\HanashGamingCafe.csproj|c:\\users\\anas\\desktop\\hanashgamingcafe\\hanashgamingcafe\\saleshistorywindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{810D23F3-85E0-43AC-8DFC-E46909B66278}|HanashGamingCafe\\HanashGamingCafe.csproj|solutionrelative:hanashgamingcafe\\saleshistorywindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{810D23F3-85E0-43AC-8DFC-E46909B66278}|HanashGamingCafe\\HanashGamingCafe.csproj|c:\\users\\anas\\desktop\\hanashgamingcafe\\hanashgamingcafe\\apiserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{810D23F3-85E0-43AC-8DFC-E46909B66278}|HanashGamingCafe\\HanashGamingCafe.csproj|solutionrelative:hanashgamingcafe\\apiserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{810D23F3-85E0-43AC-8DFC-E46909B66278}|HanashGamingCafe\\HanashGamingCafe.csproj|c:\\users\\anas\\desktop\\hanashgamingcafe\\hanashgamingcafe\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{810D23F3-85E0-43AC-8DFC-E46909B66278}|HanashGamingCafe\\HanashGamingCafe.csproj|solutionrelative:hanashgamingcafe\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{810D23F3-85E0-43AC-8DFC-E46909B66278}|HanashGamingCafe\\HanashGamingCafe.csproj|c:\\users\\anas\\desktop\\hanashgamingcafe\\hanashgamingcafe\\devicemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{810D23F3-85E0-43AC-8DFC-E46909B66278}|HanashGamingCafe\\HanashGamingCafe.csproj|solutionrelative:hanashgamingcafe\\devicemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{810D23F3-85E0-43AC-8DFC-E46909B66278}|HanashGamingCafe\\HanashGamingCafe.csproj|c:\\users\\anas\\desktop\\hanashgamingcafe\\hanashgamingcafe\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{810D23F3-85E0-43AC-8DFC-E46909B66278}|HanashGamingCafe\\HanashGamingCafe.csproj|solutionrelative:hanashgamingcafe\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{810D23F3-85E0-43AC-8DFC-E46909B66278}|HanashGamingCafe\\HanashGamingCafe.csproj|c:\\users\\anas\\desktop\\hanashgamingcafe\\hanashgamingcafe\\saleshistorywindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{810D23F3-85E0-43AC-8DFC-E46909B66278}|HanashGamingCafe\\HanashGamingCafe.csproj|solutionrelative:hanashgamingcafe\\saleshistorywindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{810D23F3-85E0-43AC-8DFC-E46909B66278}|HanashGamingCafe\\HanashGamingCafe.csproj|c:\\users\\anas\\desktop\\hanashgamingcafe\\hanashgamingcafe\\invoiceprinter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{810D23F3-85E0-43AC-8DFC-E46909B66278}|HanashGamingCafe\\HanashGamingCafe.csproj|solutionrelative:hanashgamingcafe\\invoiceprinter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{810D23F3-85E0-43AC-8DFC-E46909B66278}|HanashGamingCafe\\HanashGamingCafe.csproj|c:\\users\\anas\\desktop\\hanashgamingcafe\\hanashgamingcafe\\sessionwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{810D23F3-85E0-43AC-8DFC-E46909B66278}|HanashGamingCafe\\HanashGamingCafe.csproj|solutionrelative:hanashgamingcafe\\sessionwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{810D23F3-85E0-43AC-8DFC-E46909B66278}|HanashGamingCafe\\HanashGamingCafe.csproj|c:\\users\\anas\\desktop\\hanashgamingcafe\\hanashgamingcafe\\supabaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{810D23F3-85E0-43AC-8DFC-E46909B66278}|HanashGamingCafe\\HanashGamingCafe.csproj|solutionrelative:hanashgamingcafe\\supabaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{810D23F3-85E0-43AC-8DFC-E46909B66278}|HanashGamingCafe\\HanashGamingCafe.csproj|c:\\users\\anas\\desktop\\hanashgamingcafe\\hanashgamingcafe\\shiftmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{810D23F3-85E0-43AC-8DFC-E46909B66278}|HanashGamingCafe\\HanashGamingCafe.csproj|solutionrelative:hanashgamingcafe\\shiftmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{810D23F3-85E0-43AC-8DFC-E46909B66278}|HanashGamingCafe\\HanashGamingCafe.csproj|c:\\users\\anas\\desktop\\hanashgamingcafe\\hanashgamingcafe\\sessionmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{810D23F3-85E0-43AC-8DFC-E46909B66278}|HanashGamingCafe\\HanashGamingCafe.csproj|solutionrelative:hanashgamingcafe\\sessionmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{810D23F3-85E0-43AC-8DFC-E46909B66278}|HanashGamingCafe\\HanashGamingCafe.csproj|c:\\users\\anas\\desktop\\hanashgamingcafe\\hanashgamingcafe\\appsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{810D23F3-85E0-43AC-8DFC-E46909B66278}|HanashGamingCafe\\HanashGamingCafe.csproj|solutionrelative:hanashgamingcafe\\appsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{810D23F3-85E0-43AC-8DFC-E46909B66278}|HanashGamingCafe\\HanashGamingCafe.csproj|c:\\users\\anas\\desktop\\hanashgamingcafe\\hanashgamingcafe\\station.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{810D23F3-85E0-43AC-8DFC-E46909B66278}|HanashGamingCafe\\HanashGamingCafe.csproj|solutionrelative:hanashgamingcafe\\station.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{810D23F3-85E0-43AC-8DFC-E46909B66278}|HanashGamingCafe\\HanashGamingCafe.csproj|c:\\users\\anas\\desktop\\hanashgamingcafe\\hanashgamingcafe\\settingswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{810D23F3-85E0-43AC-8DFC-E46909B66278}|HanashGamingCafe\\HanashGamingCafe.csproj|solutionrelative:hanashgamingcafe\\settingswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{810D23F3-85E0-43AC-8DFC-E46909B66278}|HanashGamingCafe\\HanashGamingCafe.csproj|c:\\users\\anas\\desktop\\hanashgamingcafe\\hanashgamingcafe\\sessionwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{810D23F3-85E0-43AC-8DFC-E46909B66278}|HanashGamingCafe\\HanashGamingCafe.csproj|solutionrelative:hanashgamingcafe\\sessionwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{810D23F3-85E0-43AC-8DFC-E46909B66278}|HanashGamingCafe\\HanashGamingCafe.csproj|c:\\users\\anas\\desktop\\hanashgamingcafe\\hanashgamingcafe\\shiftshistorywindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{810D23F3-85E0-43AC-8DFC-E46909B66278}|HanashGamingCafe\\HanashGamingCafe.csproj|solutionrelative:hanashgamingcafe\\shiftshistorywindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{810D23F3-85E0-43AC-8DFC-E46909B66278}|HanashGamingCafe\\HanashGamingCafe.csproj|c:\\users\\anas\\desktop\\hanashgamingcafe\\hanashgamingcafe\\shiftclosewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{810D23F3-85E0-43AC-8DFC-E46909B66278}|HanashGamingCafe\\HanashGamingCafe.csproj|solutionrelative:hanashgamingcafe\\shiftclosewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{810D23F3-85E0-43AC-8DFC-E46909B66278}|HanashGamingCafe\\HanashGamingCafe.csproj|c:\\users\\anas\\desktop\\hanashgamingcafe\\hanashgamingcafe\\shiftshistorywindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{810D23F3-85E0-43AC-8DFC-E46909B66278}|HanashGamingCafe\\HanashGamingCafe.csproj|solutionrelative:hanashgamingcafe\\shiftshistorywindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{810D23F3-85E0-43AC-8DFC-E46909B66278}|HanashGamingCafe\\HanashGamingCafe.csproj|c:\\users\\anas\\desktop\\hanashgamingcafe\\hanashgamingcafe\\sessionorderdatabasemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{810D23F3-85E0-43AC-8DFC-E46909B66278}|HanashGamingCafe\\HanashGamingCafe.csproj|solutionrelative:hanashgamingcafe\\sessionorderdatabasemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{810D23F3-85E0-43AC-8DFC-E46909B66278}|HanashGamingCafe\\HanashGamingCafe.csproj|c:\\users\\anas\\desktop\\hanashgamingcafe\\hanashgamingcafe\\shiftclosewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{810D23F3-85E0-43AC-8DFC-E46909B66278}|HanashGamingCafe\\HanashGamingCafe.csproj|solutionrelative:hanashgamingcafe\\shiftclosewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{810D23F3-85E0-43AC-8DFC-E46909B66278}|HanashGamingCafe\\HanashGamingCafe.csproj|c:\\users\\anas\\desktop\\hanashgamingcafe\\hanashgamingcafe\\inventorywindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{810D23F3-85E0-43AC-8DFC-E46909B66278}|HanashGamingCafe\\HanashGamingCafe.csproj|solutionrelative:hanashgamingcafe\\inventorywindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{810D23F3-85E0-43AC-8DFC-E46909B66278}|HanashGamingCafe\\HanashGamingCafe.csproj|c:\\users\\anas\\desktop\\hanashgamingcafe\\hanashgamingcafe\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{810D23F3-85E0-43AC-8DFC-E46909B66278}|HanashGamingCafe\\HanashGamingCafe.csproj|solutionrelative:hanashgamingcafe\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{810D23F3-85E0-43AC-8DFC-E46909B66278}|HanashGamingCafe\\HanashGamingCafe.csproj|c:\\users\\anas\\desktop\\hanashgamingcafe\\hanashgamingcafe\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{810D23F3-85E0-43AC-8DFC-E46909B66278}|HanashGamingCafe\\HanashGamingCafe.csproj|solutionrelative:hanashgamingcafe\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{810D23F3-85E0-43AC-8DFC-E46909B66278}|HanashGamingCafe\\HanashGamingCafe.csproj|c:\\users\\anas\\desktop\\hanashgamingcafe\\hanashgamingcafe\\menuwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{810D23F3-85E0-43AC-8DFC-E46909B66278}|HanashGamingCafe\\HanashGamingCafe.csproj|solutionrelative:hanashgamingcafe\\menuwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{810D23F3-85E0-43AC-8DFC-E46909B66278}|HanashGamingCafe\\HanashGamingCafe.csproj|c:\\users\\anas\\desktop\\hanashgamingcafe\\hanashgamingcafe\\transferwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{810D23F3-85E0-43AC-8DFC-E46909B66278}|HanashGamingCafe\\HanashGamingCafe.csproj|solutionrelative:hanashgamingcafe\\transferwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{810D23F3-85E0-43AC-8DFC-E46909B66278}|HanashGamingCafe\\HanashGamingCafe.csproj|c:\\users\\anas\\desktop\\hanashgamingcafe\\hanashgamingcafe\\kitchenorderprinter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{810D23F3-85E0-43AC-8DFC-E46909B66278}|HanashGamingCafe\\HanashGamingCafe.csproj|solutionrelative:hanashgamingcafe\\kitchenorderprinter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{810D23F3-85E0-43AC-8DFC-E46909B66278}|HanashGamingCafe\\HanashGamingCafe.csproj|c:\\users\\anas\\desktop\\hanashgamingcafe\\hanashgamingcafe\\settingswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{810D23F3-85E0-43AC-8DFC-E46909B66278}|HanashGamingCafe\\HanashGamingCafe.csproj|solutionrelative:hanashgamingcafe\\settingswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{810D23F3-85E0-43AC-8DFC-E46909B66278}|HanashGamingCafe\\HanashGamingCafe.csproj|c:\\users\\anas\\desktop\\hanashgamingcafe\\hanashgamingcafe\\printmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{810D23F3-85E0-43AC-8DFC-E46909B66278}|HanashGamingCafe\\HanashGamingCafe.csproj|solutionrelative:hanashgamingcafe\\printmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{810D23F3-85E0-43AC-8DFC-E46909B66278}|HanashGamingCafe\\HanashGamingCafe.csproj|c:\\users\\anas\\desktop\\hanashgamingcafe\\hanashgamingcafe\\flooritem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{810D23F3-85E0-43AC-8DFC-E46909B66278}|HanashGamingCafe\\HanashGamingCafe.csproj|solutionrelative:hanashgamingcafe\\flooritem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{810D23F3-85E0-43AC-8DFC-E46909B66278}|HanashGamingCafe\\HanashGamingCafe.csproj|c:\\users\\anas\\desktop\\hanashgamingcafe\\hanashgamingcafe\\inventorywindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{810D23F3-85E0-43AC-8DFC-E46909B66278}|HanashGamingCafe\\HanashGamingCafe.csproj|solutionrelative:hanashgamingcafe\\inventorywindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{810D23F3-85E0-43AC-8DFC-E46909B66278}|HanashGamingCafe\\HanashGamingCafe.csproj|c:\\users\\anas\\desktop\\hanashgamingcafe\\hanashgamingcafe\\menuwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{810D23F3-85E0-43AC-8DFC-E46909B66278}|HanashGamingCafe\\HanashGamingCafe.csproj|solutionrelative:hanashgamingcafe\\menuwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ANAS\\Desktop\\HanashGamingCafe\\HanashGamingCafe\\obj\\Debug\\net8.0-windows\\ShiftsHistoryWindow.g.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:HanashGamingCafe\\obj\\Debug\\net8.0-windows\\ShiftsHistoryWindow.g.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{25f7e850-ffa1-11d0-b63f-00a0c922e851}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\ANAS\\Desktop\\HanashGamingCafe\\HanashGamingCafe\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "HanashGamingCafe\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\ANAS\\Desktop\\HanashGamingCafe\\HanashGamingCafe\\MainWindow.xaml.cs",
+              "RelativeToolTip": "HanashGamingCafe\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAEAFAAAAAAAAAAAwwE0FAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-28T01:36:16.536Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "SupabaseService.cs",
+              "DocumentMoniker": "C:\\Users\\ANAS\\Desktop\\HanashGamingCafe\\HanashGamingCafe\\SupabaseService.cs",
+              "RelativeDocumentMoniker": "HanashGamingCafe\\SupabaseService.cs",
+              "ToolTip": "C:\\Users\\ANAS\\Desktop\\HanashGamingCafe\\HanashGamingCafe\\SupabaseService.cs",
+              "RelativeToolTip": "HanashGamingCafe\\SupabaseService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-28T01:38:50.619Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SalesHistoryWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\ANAS\\Desktop\\HanashGamingCafe\\HanashGamingCafe\\SalesHistoryWindow.xaml",
+              "RelativeDocumentMoniker": "HanashGamingCafe\\SalesHistoryWindow.xaml",
+              "ToolTip": "C:\\Users\\ANAS\\Desktop\\HanashGamingCafe\\HanashGamingCafe\\SalesHistoryWindow.xaml",
+              "RelativeToolTip": "HanashGamingCafe\\SalesHistoryWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-08-03T01:44:27.021Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SalesHistoryWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\ANAS\\Desktop\\HanashGamingCafe\\HanashGamingCafe\\SalesHistoryWindow.xaml.cs",
+              "RelativeDocumentMoniker": "HanashGamingCafe\\SalesHistoryWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\ANAS\\Desktop\\HanashGamingCafe\\HanashGamingCafe\\SalesHistoryWindow.xaml.cs",
+              "RelativeToolTip": "HanashGamingCafe\\SalesHistoryWindow.xaml.cs",
+              "ViewState": "AgIAAMEAAAAAAAAAAAAswMwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-05T02:26:44.541Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AssemblyInfo.cs",
+              "DocumentMoniker": "C:\\Users\\ANAS\\Desktop\\HanashGamingCafe\\HanashGamingCafe\\AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "HanashGamingCafe\\AssemblyInfo.cs",
+              "ToolTip": "C:\\Users\\ANAS\\Desktop\\HanashGamingCafe\\HanashGamingCafe\\AssemblyInfo.cs",
+              "RelativeToolTip": "HanashGamingCafe\\AssemblyInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-03T03:37:32.838Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ShiftModel.cs",
+              "DocumentMoniker": "C:\\Users\\ANAS\\Desktop\\HanashGamingCafe\\HanashGamingCafe\\ShiftModel.cs",
+              "RelativeDocumentMoniker": "HanashGamingCafe\\ShiftModel.cs",
+              "ToolTip": "C:\\Users\\ANAS\\Desktop\\HanashGamingCafe\\HanashGamingCafe\\ShiftModel.cs",
+              "RelativeToolTip": "HanashGamingCafe\\ShiftModel.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAIwC8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-02T20:31:11.089Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SessionWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\ANAS\\Desktop\\HanashGamingCafe\\HanashGamingCafe\\SessionWindow.xaml.cs",
+              "RelativeDocumentMoniker": "HanashGamingCafe\\SessionWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\ANAS\\Desktop\\HanashGamingCafe\\HanashGamingCafe\\SessionWindow.xaml.cs",
+              "RelativeToolTip": "HanashGamingCafe\\SessionWindow.xaml.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAQwDwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-28T01:55:18.175Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "InvoicePrinter.cs",
+              "DocumentMoniker": "C:\\Users\\ANAS\\Desktop\\HanashGamingCafe\\HanashGamingCafe\\InvoicePrinter.cs",
+              "RelativeDocumentMoniker": "HanashGamingCafe\\InvoicePrinter.cs",
+              "ToolTip": "C:\\Users\\ANAS\\Desktop\\HanashGamingCafe\\HanashGamingCafe\\InvoicePrinter.cs",
+              "RelativeToolTip": "HanashGamingCafe\\InvoicePrinter.cs",
+              "ViewState": "AgIAAIMBAAAAAAAAAAAIwKkBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-09T02:31:39.128Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\ANAS\\Desktop\\HanashGamingCafe\\HanashGamingCafe\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "HanashGamingCafe\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\ANAS\\Desktop\\HanashGamingCafe\\HanashGamingCafe\\MainWindow.xaml",
+              "RelativeToolTip": "HanashGamingCafe\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-07-28T01:36:20.337Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DeviceModel.cs",
+              "DocumentMoniker": "C:\\Users\\ANAS\\Desktop\\HanashGamingCafe\\HanashGamingCafe\\DeviceModel.cs",
+              "RelativeDocumentMoniker": "HanashGamingCafe\\DeviceModel.cs",
+              "ToolTip": "C:\\Users\\ANAS\\Desktop\\HanashGamingCafe\\HanashGamingCafe\\DeviceModel.cs",
+              "RelativeToolTip": "HanashGamingCafe\\DeviceModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-28T03:31:58.824Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ApiServer.cs",
+              "DocumentMoniker": "C:\\Users\\ANAS\\Desktop\\HanashGamingCafe\\HanashGamingCafe\\ApiServer.cs",
+              "RelativeDocumentMoniker": "HanashGamingCafe\\ApiServer.cs",
+              "ToolTip": "C:\\Users\\ANAS\\Desktop\\HanashGamingCafe\\HanashGamingCafe\\ApiServer.cs",
+              "RelativeToolTip": "HanashGamingCafe\\ApiServer.cs",
+              "ViewState": "AgIAAKAAAAAAAAAAAAAqwLAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-02T23:21:52.412Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "SessionModel.cs",
+              "DocumentMoniker": "C:\\Users\\ANAS\\Desktop\\HanashGamingCafe\\HanashGamingCafe\\SessionModel.cs",
+              "RelativeDocumentMoniker": "HanashGamingCafe\\SessionModel.cs",
+              "ToolTip": "C:\\Users\\ANAS\\Desktop\\HanashGamingCafe\\HanashGamingCafe\\SessionModel.cs",
+              "RelativeToolTip": "HanashGamingCafe\\SessionModel.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAADwvzMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-03T00:50:29.452Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AppSettings.cs",
+              "DocumentMoniker": "C:\\Users\\ANAS\\Desktop\\HanashGamingCafe\\HanashGamingCafe\\AppSettings.cs",
+              "RelativeDocumentMoniker": "HanashGamingCafe\\AppSettings.cs",
+              "ToolTip": "C:\\Users\\ANAS\\Desktop\\HanashGamingCafe\\HanashGamingCafe\\AppSettings.cs",
+              "RelativeToolTip": "HanashGamingCafe\\AppSettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-10T03:52:05.157Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Station.cs",
+              "DocumentMoniker": "C:\\Users\\ANAS\\Desktop\\HanashGamingCafe\\HanashGamingCafe\\Station.cs",
+              "RelativeDocumentMoniker": "HanashGamingCafe\\Station.cs",
+              "ToolTip": "C:\\Users\\ANAS\\Desktop\\HanashGamingCafe\\HanashGamingCafe\\Station.cs",
+              "RelativeToolTip": "HanashGamingCafe\\Station.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAiwAAAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-03T00:17:38.871Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "SettingsWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\ANAS\\Desktop\\HanashGamingCafe\\HanashGamingCafe\\SettingsWindow.xaml",
+              "RelativeDocumentMoniker": "HanashGamingCafe\\SettingsWindow.xaml",
+              "ToolTip": "C:\\Users\\ANAS\\Desktop\\HanashGamingCafe\\HanashGamingCafe\\SettingsWindow.xaml",
+              "RelativeToolTip": "HanashGamingCafe\\SettingsWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-08-10T03:54:29.498Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "SessionWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\ANAS\\Desktop\\HanashGamingCafe\\HanashGamingCafe\\SessionWindow.xaml",
+              "RelativeDocumentMoniker": "HanashGamingCafe\\SessionWindow.xaml",
+              "ToolTip": "C:\\Users\\ANAS\\Desktop\\HanashGamingCafe\\HanashGamingCafe\\SessionWindow.xaml",
+              "RelativeToolTip": "HanashGamingCafe\\SessionWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-07-28T01:54:35.937Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ShiftsHistoryWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\ANAS\\Desktop\\HanashGamingCafe\\HanashGamingCafe\\ShiftsHistoryWindow.xaml.cs",
+              "RelativeDocumentMoniker": "HanashGamingCafe\\ShiftsHistoryWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\ANAS\\Desktop\\HanashGamingCafe\\HanashGamingCafe\\ShiftsHistoryWindow.xaml.cs",
+              "RelativeToolTip": "HanashGamingCafe\\ShiftsHistoryWindow.xaml.cs",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAIwIYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-02T20:39:12.4Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ShiftCloseWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\ANAS\\Desktop\\HanashGamingCafe\\HanashGamingCafe\\ShiftCloseWindow.xaml.cs",
+              "RelativeDocumentMoniker": "HanashGamingCafe\\ShiftCloseWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\ANAS\\Desktop\\HanashGamingCafe\\HanashGamingCafe\\ShiftCloseWindow.xaml.cs",
+              "RelativeToolTip": "HanashGamingCafe\\ShiftCloseWindow.xaml.cs",
+              "ViewState": "AgIAAHQAAAAAAAAAAAAIwJoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-02T20:32:19.55Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ShiftsHistoryWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\ANAS\\Desktop\\HanashGamingCafe\\HanashGamingCafe\\ShiftsHistoryWindow.xaml",
+              "RelativeDocumentMoniker": "HanashGamingCafe\\ShiftsHistoryWindow.xaml",
+              "ToolTip": "C:\\Users\\ANAS\\Desktop\\HanashGamingCafe\\HanashGamingCafe\\ShiftsHistoryWindow.xaml",
+              "RelativeToolTip": "HanashGamingCafe\\ShiftsHistoryWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-08-17T02:20:23.635Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ShiftCloseWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\ANAS\\Desktop\\HanashGamingCafe\\HanashGamingCafe\\ShiftCloseWindow.xaml",
+              "RelativeDocumentMoniker": "HanashGamingCafe\\ShiftCloseWindow.xaml",
+              "ToolTip": "C:\\Users\\ANAS\\Desktop\\HanashGamingCafe\\HanashGamingCafe\\ShiftCloseWindow.xaml",
+              "RelativeToolTip": "HanashGamingCafe\\ShiftCloseWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-08-02T20:31:46.21Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "SessionOrderDatabaseModel.cs",
+              "DocumentMoniker": "C:\\Users\\ANAS\\Desktop\\HanashGamingCafe\\HanashGamingCafe\\SessionOrderDatabaseModel.cs",
+              "RelativeDocumentMoniker": "HanashGamingCafe\\SessionOrderDatabaseModel.cs",
+              "ToolTip": "C:\\Users\\ANAS\\Desktop\\HanashGamingCafe\\HanashGamingCafe\\SessionOrderDatabaseModel.cs",
+              "RelativeToolTip": "HanashGamingCafe\\SessionOrderDatabaseModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-03T19:30:48.3Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "InventoryWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\ANAS\\Desktop\\HanashGamingCafe\\HanashGamingCafe\\InventoryWindow.xaml",
+              "RelativeDocumentMoniker": "HanashGamingCafe\\InventoryWindow.xaml",
+              "ToolTip": "C:\\Users\\ANAS\\Desktop\\HanashGamingCafe\\HanashGamingCafe\\InventoryWindow.xaml",
+              "RelativeToolTip": "HanashGamingCafe\\InventoryWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-08-03T01:44:29.34Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\ANAS\\Desktop\\HanashGamingCafe\\HanashGamingCafe\\Product.cs",
+              "RelativeDocumentMoniker": "HanashGamingCafe\\Product.cs",
+              "ToolTip": "C:\\Users\\ANAS\\Desktop\\HanashGamingCafe\\HanashGamingCafe\\Product.cs",
+              "RelativeToolTip": "HanashGamingCafe\\Product.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwCQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-03T03:37:41.662Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\ANAS\\Desktop\\HanashGamingCafe\\HanashGamingCafe\\App.xaml",
+              "RelativeDocumentMoniker": "HanashGamingCafe\\App.xaml",
+              "ToolTip": "C:\\Users\\ANAS\\Desktop\\HanashGamingCafe\\HanashGamingCafe\\App.xaml",
+              "RelativeToolTip": "HanashGamingCafe\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-08-05T01:27:15.443Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "MenuWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\ANAS\\Desktop\\HanashGamingCafe\\HanashGamingCafe\\MenuWindow.xaml",
+              "RelativeDocumentMoniker": "HanashGamingCafe\\MenuWindow.xaml",
+              "ToolTip": "C:\\Users\\ANAS\\Desktop\\HanashGamingCafe\\HanashGamingCafe\\MenuWindow.xaml",
+              "RelativeToolTip": "HanashGamingCafe\\MenuWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-08-03T01:44:28.257Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "TransferWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\ANAS\\Desktop\\HanashGamingCafe\\HanashGamingCafe\\TransferWindow.xaml",
+              "RelativeDocumentMoniker": "HanashGamingCafe\\TransferWindow.xaml",
+              "ToolTip": "C:\\Users\\ANAS\\Desktop\\HanashGamingCafe\\HanashGamingCafe\\TransferWindow.xaml",
+              "RelativeToolTip": "HanashGamingCafe\\TransferWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-07-29T01:36:20.23Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "KitchenOrderPrinter.cs",
+              "DocumentMoniker": "C:\\Users\\ANAS\\Desktop\\HanashGamingCafe\\HanashGamingCafe\\KitchenOrderPrinter.cs",
+              "RelativeDocumentMoniker": "HanashGamingCafe\\KitchenOrderPrinter.cs",
+              "ToolTip": "C:\\Users\\ANAS\\Desktop\\HanashGamingCafe\\HanashGamingCafe\\KitchenOrderPrinter.cs",
+              "RelativeToolTip": "HanashGamingCafe\\KitchenOrderPrinter.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAiwBgAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-09T03:55:25.127Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "SettingsWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\ANAS\\Desktop\\HanashGamingCafe\\HanashGamingCafe\\SettingsWindow.xaml.cs",
+              "RelativeDocumentMoniker": "HanashGamingCafe\\SettingsWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\ANAS\\Desktop\\HanashGamingCafe\\HanashGamingCafe\\SettingsWindow.xaml.cs",
+              "RelativeToolTip": "HanashGamingCafe\\SettingsWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-10T03:54:52.041Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "PrintManager.cs",
+              "DocumentMoniker": "C:\\Users\\ANAS\\Desktop\\HanashGamingCafe\\HanashGamingCafe\\PrintManager.cs",
+              "RelativeDocumentMoniker": "HanashGamingCafe\\PrintManager.cs",
+              "ToolTip": "C:\\Users\\ANAS\\Desktop\\HanashGamingCafe\\HanashGamingCafe\\PrintManager.cs",
+              "RelativeToolTip": "HanashGamingCafe\\PrintManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-09T02:14:23.25Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "FloorItem.cs",
+              "DocumentMoniker": "C:\\Users\\ANAS\\Desktop\\HanashGamingCafe\\HanashGamingCafe\\FloorItem.cs",
+              "RelativeDocumentMoniker": "HanashGamingCafe\\FloorItem.cs",
+              "ToolTip": "C:\\Users\\ANAS\\Desktop\\HanashGamingCafe\\HanashGamingCafe\\FloorItem.cs",
+              "RelativeToolTip": "HanashGamingCafe\\FloorItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-28T01:40:03.633Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "InventoryWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\ANAS\\Desktop\\HanashGamingCafe\\HanashGamingCafe\\InventoryWindow.xaml.cs",
+              "RelativeDocumentMoniker": "HanashGamingCafe\\InventoryWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\ANAS\\Desktop\\HanashGamingCafe\\HanashGamingCafe\\InventoryWindow.xaml.cs",
+              "RelativeToolTip": "HanashGamingCafe\\InventoryWindow.xaml.cs",
+              "ViewState": "AgIAAHsAAAAAAAAAAAAuwJsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-28T02:42:23.683Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "MenuWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\ANAS\\Desktop\\HanashGamingCafe\\HanashGamingCafe\\MenuWindow.xaml.cs",
+              "RelativeDocumentMoniker": "HanashGamingCafe\\MenuWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\ANAS\\Desktop\\HanashGamingCafe\\HanashGamingCafe\\MenuWindow.xaml.cs",
+              "RelativeToolTip": "HanashGamingCafe\\MenuWindow.xaml.cs",
+              "ViewState": "AgIAAHkAAAAAAAAAAAAAwJkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-03T21:15:32.729Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Microsoft.Common.CurrentVersion.targets",
+              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeToolTip": "..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ViewState": "AgIAAA8VAAAAAAAAAAAlwBEVAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2026-08-03T00:56:56.631Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "ShiftsHistoryWindow.g.cs",
+              "DocumentMoniker": "C:\\Users\\ANAS\\Desktop\\HanashGamingCafe\\HanashGamingCafe\\obj\\Debug\\net8.0-windows\\ShiftsHistoryWindow.g.cs",
+              "RelativeDocumentMoniker": "HanashGamingCafe\\obj\\Debug\\net8.0-windows\\ShiftsHistoryWindow.g.cs",
+              "ToolTip": "C:\\Users\\ANAS\\Desktop\\HanashGamingCafe\\HanashGamingCafe\\obj\\Debug\\net8.0-windows\\ShiftsHistoryWindow.g.cs",
+              "RelativeToolTip": "HanashGamingCafe\\obj\\Debug\\net8.0-windows\\ShiftsHistoryWindow.g.cs",
+              "ViewState": "AgIAAFMAAAAAAAAAAAD4v2UAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-02T21:04:17.234Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
